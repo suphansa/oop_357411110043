@@ -16,10 +16,17 @@ public class InputDataToArray {
 
     }//main
 
-    private static int[] showData(int[] num) {
+    private static int[] inputData(int[] num) {
+    }
+
+    private static int summation (int[] num) {
         System.out.println(" to array");
-        for (int val : num)
-            System.out.print(val + " ");
+        int total = 0;
+        for (int i=0;<num.length i++)
+            total += num[i];
+
+            System.out.print("The summatipn of " + "value in array is: "+total );
+        System.out.println("The average value " + "in array is: "+total/MAX);
     }
 
 
