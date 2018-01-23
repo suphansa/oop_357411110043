@@ -7,15 +7,16 @@ package oop_lab7;
 
 
 public class Student {
+    public static String getder = "Male";
     private String id;
     private String major;
     private String faculty;
     private String name;
     //Constructor
     //Default constructor
-    private Student(){}
+    public Student(){}
     //crate constructor by owner
-    private Student(String id,String m, String f, String n){
+    public Student(String id,String m, String f, String n){
         //assign data to class properties
         this.id =id;
         this.faculty =f;
@@ -37,26 +38,35 @@ public class Student {
                 '}';
     }//to string
 
-    public void setId(String id){
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 
     public String getMajor() {
-        return this.major;
+        return major;
     }
-    public void setMajor(){
-        this.major=major;
+
+    public void setMajor(String major) {
+        this.major = major;
     }
+
     public String getFaculty() {
-        return this.faculty;
+        return faculty;
     }
-    public void setFaculty(){
-        this.faculty=faculty;
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
+
     public String getName() {
-        return this.name;
+        return name;
     }
-    public void setName(){
-        this.name=name;
+
+    public void setName(String name) {
+        this.name = name;
     }
 }//class
