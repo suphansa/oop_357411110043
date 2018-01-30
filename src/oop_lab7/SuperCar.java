@@ -12,12 +12,15 @@ public class SuperCar {
     private String CarEngineSize;
     private String MaxSpeed;
     private String CountryOfOrigin;
+
     //Constructor
     //Default constructor
-    public SuperCar(){}
-        //crate constructor by owner
-        //crate constructor by owner
-    public SuperCar(String b,String c, String e ,String m,String o) {
+    public SuperCar() {
+    }
+
+    //crate constructor by owner
+    //crate constructor by owner
+    public SuperCar(String b, String c, String e, String m, String o) {
         //assign data to class properties
         this.CarBrand = b;
         this.CarColor = c;
@@ -39,8 +42,9 @@ public class SuperCar {
                 '}';
     }
 
+
     public String getCarBrand() {
-        return this.CarBrand;
+        return CarBrand;
     }
 
     public void setCarBrand(String carBrand) {
@@ -76,7 +80,6 @@ public class SuperCar {
     }
 
     public void setCountryOfOrigin(String countryOfOrigin) {
-        CountryOfOrigin = countryOfOrigin;
+        this.CountryOfOrigin = CountryOfOrigin;
     }
 }//class
-
