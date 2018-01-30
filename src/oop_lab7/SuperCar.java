@@ -82,4 +82,6 @@ public class SuperCar {
     public void setCountryOfOrigin(String countryOfOrigin) {
         this.CountryOfOrigin = CountryOfOrigin;
     }
+
+    }
 }//class
