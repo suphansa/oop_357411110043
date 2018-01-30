@@ -6,9 +6,9 @@ public class Studen extends Person {
     private String studentID;
     private String major;
 
-    public Studen(String personID, String name, String getder, int age, String studentID, String major) {
+    public Studen(String personID, String name, String gender, int age, String studentID, String major) {
         //call constructor of super of
-        super(personID, name, getder, age);
+        super(personID, name, gender, age);
         this.studentID = studentID;
         this.major = major;
     }
@@ -21,11 +21,13 @@ public class Studen extends Person {
                 "} " + super.toString();
     }
 
-    public String getStudentID() {
+    public String getStudentID()
+    {
         return studentID;
     }
 
-    public void setStudentID(String studentID) {
+    public void setStudentID(String studentID)
+    {
         this.studentID = studentID;
     }
 

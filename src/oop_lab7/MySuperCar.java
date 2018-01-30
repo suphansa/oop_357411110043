@@ -9,7 +9,7 @@ public class MySuperCar {
         myCarList = inputData(myCarList);
         System.out.println("== Show Super Car Info ==");
         for (int i=0;i<myCarList.size();i++){
-            System.out.println(myCarList.get(i).getSuperCarInfo());
+            System.out.println(myCarList.get(i).getSuperCarIn());
         }
     }
     private static ArrayList inputData(ArrayList myCarList) {
@@ -23,9 +23,9 @@ public class MySuperCar {
             String c = scanner.nextLine();
             System.out.print("Engine Size: ");
             String e = scanner.nextLine();
-            System.out.print("maxspeed: ");
+            System.out.print("MaxSpeed: ");
             String m = scanner.nextLine();
-            System.out.print("origin: ");
+            System.out.print("CountryOfOrigin: ");
             String o = scanner.nextLine();
 
             SuperCar car  = new SuperCar(b,c,e,m,o);
