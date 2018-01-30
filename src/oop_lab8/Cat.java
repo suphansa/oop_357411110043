@@ -25,7 +25,7 @@ public abstract class Cat extends pet{
 
     public void setBreed(String breed) {
         this.breed = breed;
-    }
+    }//main
 }//class
 
 
