@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MySuperCar {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
         myCarList = inputData(myCarList);
         System.out.println("== Show Super Car Info ==");
         for (int i=0;i<myCarList.size();i++){
-            System.out.println(myCarList.get(i).getSuperCarIn());
+            System.out.println(myCarList.get(i).getSuperCarInfo());
         }
     }
     private static ArrayList inputData(ArrayList myCarList) {
@@ -23,9 +23,9 @@ public class MySuperCar {
             String c = scanner.nextLine();
             System.out.print("Engine Size: ");
             String e = scanner.nextLine();
-            System.out.print("MaxSpeed: ");
+            System.out.print("maxspeed: ");
             String m = scanner.nextLine();
-            System.out.print("CountryOfOrigin: ");
+            System.out.print("origin: ");
             String o = scanner.nextLine();
 
             SuperCar car  = new SuperCar(b,c,e,m,o);
