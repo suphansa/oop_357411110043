@@ -20,6 +20,6 @@ public class PersonInfo {
             "20000");
 
 }
-}
+}//class
 
 
