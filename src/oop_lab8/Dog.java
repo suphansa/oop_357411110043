@@ -28,4 +28,4 @@ public class Dog extends pet{
         public void setBreed(String breed) {
             this.breed = breed;
         }
-}
+}//class
